@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import ProjectCard from './ProjectCard';
-import {comerciaProjects, customProjects} from './utils';
+// import ProjectCard from './ProjectCard';
+// import {comerciaProjects, customProjects} from './utils';
 
 import {DonwloadCVButton} from 'components/DownloadCVButton';
 
@@ -44,7 +44,7 @@ export const Projects = () => {
           Personal
         </button>
       </div>
-      <>
+      {/* <>
         {activeTab === 'comercial' ? (
           <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
             {comerciaProjects.map((project, index) => (
@@ -58,7 +58,7 @@ export const Projects = () => {
             ))}
           </div>
         )}
-      </>
+      </> */}
       <div className="mt-12 w-full">
         <i className="fond-light pr-4 text-lg text-primaryColor">More information</i>
         <DonwloadCVButton isSmall />

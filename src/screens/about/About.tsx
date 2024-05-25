@@ -21,8 +21,8 @@ export const About = () => {
         <br />
         <span className="html-tag pl-8">{'<p>'}</span>
         <p className="pb-4 pl-10 text-lg">
-          My name is <span className="text-lg text-themePrimaryColor">Muhammad Haris Ahsan</span> and I am an experienced{' '}
-          <span className="text-lg text-themePrimaryColor">Full-Stack JavaScript Developer </span>
+          My name is <span className="text-lg font-semibold text-[#d400ff]">Muhammad Haris Ahsan</span> and I am an
+          experienced <span className="text-lg text-themePrimaryColor">Full-Stack JavaScript Developer </span>
           with over 2 years of expertise in building web applications using{' '}
           <span className="text-lg text-themePrimaryColor">React and Node.js</span> technologies.
         </p>
