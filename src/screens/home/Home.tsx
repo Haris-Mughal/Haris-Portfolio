@@ -28,16 +28,7 @@ export const Home = () => {
             <span className="text-3xl font-extrabold text-themePrimaryColor sm:text-5xl">{'/>'}</span>{' '}
           </h1>
           <TypeAnimation
-            sequence={[
-              'Full-Stack Developer',
-              1000,
-              'MERN-stack Developer',
-              1000,
-              'React Developer',
-              1000,
-              'Next Developer',
-              1000,
-            ]}
+            sequence={['Full-Stack Developer', 1000, 'MERN-stack Developer', 1000, 'Next.js Developer', 1000]}
             wrapper="span"
             speed={1}
             style={{
