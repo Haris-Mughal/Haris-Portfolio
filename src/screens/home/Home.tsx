@@ -23,7 +23,7 @@ export const Home = () => {
             <span className="span">{'<'}</span>Hi 👋 my name is
           </p>
 
-          <h1 className="pt-2 text-3xl font-bold text-primaryColor opacity-70 sm:text-5xl">
+          <h1 className="pt-2 text-3xl font-bold text-white opacity-90 sm:text-5xl">
             Muhammad Haris Ahsan{' '}
             <span className="text-3xl font-extrabold text-themePrimaryColor sm:text-5xl">{'/>'}</span>{' '}
           </h1>
@@ -44,7 +44,7 @@ export const Home = () => {
               paddingTop: '8px',
               fontWeight: '300',
               fontSize: '1.5rem',
-              color: '#768390',
+              color: '#fff',
               display: 'inline-block',
             }}
             repeat={Infinity}

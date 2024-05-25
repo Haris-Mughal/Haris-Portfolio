@@ -3,16 +3,26 @@ import TextareaAutosize from 'react-textarea-autosize';
 import {socialNetworks} from './utils';
 
 export const Contact = () => {
-  const [val, setVal] = useState('');
+  const [msg, setMsg] = useState<string>('');
 
   const contacts = [
     {
       field: 'email',
-      component: <input type="email" className="bg-transparent pl-2 focus-visible:outline-none active:border-none" />,
+      component: (
+        <input
+          type="email"
+          className="w-100 border-b-[0.5px] border-dashed border-[#84099c] bg-transparent pl-2 focus-visible:outline-none active:outline-none"
+        />
+      ),
     },
     {
       field: 'subject',
-      component: <input className="bg-transparent pl-2 focus-visible:outline-none active:border-none" />,
+      component: (
+        <input
+          type="text"
+          className="w-100 border-b-[0.5px] border-dashed border-[#84099c] bg-transparent pl-2 focus-visible:outline-none active:outline-none"
+        />
+      ),
     },
     {
       field: 'message',
@@ -20,10 +30,11 @@ export const Contact = () => {
         <div className="w-full">
           <TextareaAutosize
             minRows={3}
-            className="w-92 resize-none overflow-auto bg-transparent pl-2 text-primaryColor focus-visible:outline-none active:border-none"
-            maxRows={6}
-            value={val}
-            onChange={(ev) => setVal(ev.target.value)}
+            className="w-100 resize-none overflow-hidden border-b-[0.5px] border-dashed border-[#84099c] bg-transparent pl-2 text-primaryColor focus-visible:outline-none active:border-none"
+            maxRows={10}
+            cols={19}
+            value={msg}
+            onChange={(ev) => setMsg(ev.target.value)}
           />
         </div>
       ),
@@ -41,24 +52,22 @@ export const Contact = () => {
         <span className="html-tag">{'</b>'}</span>
       </div>
       <div className="flex flex-col pt-8 lg:flex-row lg:pt-32">
-        <div>
-          <div className="flex flex-col items-center">
-            <h3 className="font-bold text-primaryColor">FIND ME ON</h3>
-            <p className="text-primaryColor">
-              Please don`t hesitate to reach out to me{' '}
-              <span className="text-lg text-themePrimaryColor">and connect.</span>
+        <div className="flex w-[40%] flex-col">
+          <div className="ms-[-20px] flex flex-col">
+            <h3 className="ms-[-35px] text-center font-bold text-primaryColor">FIND ME ON</h3>
+            <p className=" items-start text-primaryColor">
+              Please don`t hesitate to
+              <span className="text-lg text-themePrimaryColor"> connect.</span>
             </p>
           </div>
-          <div className="grid w-full grid-cols-5 items-center gap-1 p-2 sm:gap-6">
-            {socialNetworks().map((item) => item)}
-          </div>
+          <div className="grid w-full grid-cols-5 gap-1 p-2 sm:gap-6">{socialNetworks().map((item) => item)}</div>
         </div>
-        <div className="line-contact relative w-[50%] whitespace-pre-wrap pl-10 pt-16 sm:ml-24 sm:pl-4 lg:w-1/3 lg:pt-0">
-          <p className="text-xl text-themePrimaryColor">
+        <div className="line-contact relative w-[60%] whitespace-pre-wrap pl-10 pt-16 sm:ml-24 sm:pl-4 lg:w-1/3 lg:pt-0">
+          <p className="w-full text-xl text-themePrimaryColor">
             .contactMe<span className=" text-xl text-primaryColor">{' {'}</span>
           </p>
           {contacts.map(({field, component}) => (
-            <p className="line-contact flex pl-10  text-lg text-primaryColor" key={field}>
+            <p className="line-contact flex w-full pl-10 text-lg text-primaryColor" key={field}>
               {field}:{component}
             </p>
           ))}
