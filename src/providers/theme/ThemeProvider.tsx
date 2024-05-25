@@ -4,7 +4,7 @@ import {Theme} from './types';
 
 export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
   const currentTheme = localStorage.getItem('theme') as Theme;
-  const [theme, setTheme] = useState<Theme>(currentTheme || Theme.BLUE);
+  const [theme, setTheme] = useState<Theme>(currentTheme || Theme.DARK);
 
   const toggleTheme = (theme: Theme) => {
     setTheme(theme);
@@ -14,8 +14,8 @@ export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
     const currentTheme = localStorage.getItem('theme');
 
     if (!currentTheme) {
-      if (window.matchMedia && window.matchMedia('prefers-color-scheme: blue)')) {
-        setTheme(Theme.BLUE);
+      if (window.matchMedia && window.matchMedia('prefers-color-scheme: dark)')) {
+        setTheme(Theme.DARK);
       }
     } else {
       setTheme(currentTheme as Theme);
