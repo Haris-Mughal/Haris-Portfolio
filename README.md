@@ -10,7 +10,7 @@ This repository contains code for Portfolio website created using React.
 
 ## Demo 🎥
 
-Check live demonstration <a href="https://portfolio.enikosoft.com/"><strong>here</strong></a>
+Check live demonstration <a href="https://haris-ahsan.vercel.app/"><strong>here</strong></a>
 
 ## Sections :bookmark:
 
