@@ -9,13 +9,11 @@
 
 // import {BiLogoPostgresql} from 'react-icons/bi';
 import {
-  FaNodeJs,
   // FaNodeJs,
   FaReact,
 } from 'react-icons/fa';
 import {
-  SiJavascript,
-  SiMongodb,
+  SiAxios,
   SiRedux,
   //  SiStripe,
   SiTailwindcss,
@@ -107,16 +105,21 @@ export const comerciaProjects: Project[] = [
   // },
   {
     name: 'Nft Marketplace',
-    description: `Team size: 2 (Me & Huzaifa) . The main goal of the project is to allow a
-        user to see nfts on the following social projects. My responsibilities were creating new functionality, creating new site versions (their
-      maintaining), bugs fixing, working with the application, add new requests to DB and fixing on the server side.`,
+    url: 'https://haris-nftmarketplace.vercel.app/',
+    description: `Team size: 2 (Me & Huzaifa) .The main goal of the project is to allow a
+        user to see nfts on the social projects. My responsibilities were creating new functionality, creating new site versions (their
+      maintaining), bugs fixing.`,
     // img: viktreLofo,
     stack: [
-      <SiJavascript key="js" color="#E9D54B" className="text-[28px]" />,
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-      <SiMongodb key="mongodb" color="#2c913f" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiAxios key="Axios" color="#2F75C0" className="text-[28px]" />,
+      // <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
+      // <SiMongodb key="mongodb" color="#2c913f" className="text-[28px]" />,
     ],
+    git: 'https://github.com/Haris-Mughal/NFT-Marketplace-App',
   },
 ];
 
@@ -150,7 +153,7 @@ export const customProjects: Project[] = [
 
       // <FaGoogle key="google" color="#000" className="text-[28px]" />,
     ],
-    // git: 'https://github.com/enikosoft/weather-widget',
+    git: 'https://github.com/Haris-Mughal/Weather-Web-App',
   },
   {
     name: 'E-commerce store',
@@ -182,6 +185,6 @@ export const customProjects: Project[] = [
       // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
       // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
     ],
-    // git: 'https://github.com/enikosoft/next-ecommerce-smart-food',
+    git: 'https://github.com/Haris-Mughal/Library-Web-App',
   },
 ];
