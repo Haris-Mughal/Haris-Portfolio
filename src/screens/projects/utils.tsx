@@ -8,19 +8,26 @@
 // export default utils;
 
 // import {BiLogoPostgresql} from 'react-icons/bi';
-import {FaGoogle, FaNodeJs, FaReact} from 'react-icons/fa';
 import {
-  SiNextdotjs,
+  FaNodeJs,
+  // FaNodeJs,
+  FaReact,
+} from 'react-icons/fa';
+import {
+  SiJavascript,
+  SiMongodb,
+  SiRedux,
   //  SiStripe,
   SiTailwindcss,
+  SiVite,
 } from 'react-icons/si';
 
 import {
   // SiAmazonaws,
   // SiApollographql,
   // SiGraphql,
-  SiJavascript,
-  SiMongodb,
+  // SiJavascript,
+  // SiMongodb,
   // SiMysql,
   // SiNestjs,
   // SiPrisma,
@@ -100,7 +107,7 @@ export const comerciaProjects: Project[] = [
   // },
   {
     name: 'Nft Marketplace',
-    description: `Team size: 1. The main goal of the project is to allow a
+    description: `Team size: 2 (Me & Huzaifa) . The main goal of the project is to allow a
         user to see nfts on the following social projects. My responsibilities were creating new functionality, creating new site versions (their
       maintaining), bugs fixing, working with the application, add new requests to DB and fixing on the server side.`,
     // img: viktreLofo,
@@ -115,34 +122,8 @@ export const comerciaProjects: Project[] = [
 
 export const customProjects: Project[] = [
   {
-    name: 'Weather React App',
-    // url: 'https://weather.enikosoft.com/',
-    description: `React/Typescript/StyledComponent/reduxToolkit/ApiIntegration. You can find weather and current location time for any cities, searched by Google Place Api. Adaptive and responsive design.`,
-    // img: weatherAppLofo,
-    stack: [
-      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaGoogle key="google" color="#000" className="text-[28px]" />,
-    ],
-    // git: 'https://github.com/enikosoft/weather-widget',
-  },
-  {
-    name: 'E-commerce store',
-    // url: 'https://smart-food.enikosoft.com/',
-    description: `E-commerce project on Next.js, React, Tailwind. Online shop for selling clothes. Adaptive and responsive design. Full checkout proccess. Using clerk auth.`,
-    // img: smartFoodLogo,
-    stack: [
-      <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
-      // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
-      // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
-    ],
-    // git: 'https://github.com/enikosoft/next-ecommerce-smart-food',
-  },
-  {
     name: 'My Portfolio',
-    url: '',
+    url: 'https://muhammad-haris-ahsan.vercel.app/',
     description: `Welcome to my portfolio! Explore my diverse range of projects,
       showcasing my expertise in building responsive and dynamic web applications.
       Dive into my code, discover my skills,
@@ -152,7 +133,55 @@ export const customProjects: Project[] = [
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
       <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
     ],
     git: 'https://github.com/Haris-Mughal/Haris-Portfolio.git',
+  },
+  {
+    name: 'Weather React App',
+    // url: 'https://weather.enikosoft.com/',
+    description: `React/Typescript/StyledComponent/reduxToolkit/ApiIntegration. You can find weather and current location time for any cities, searched by Google Place Api. Adaptive and responsive design.`,
+    // img: weatherAppLofo,
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+
+      // <FaGoogle key="google" color="#000" className="text-[28px]" />,
+    ],
+    // git: 'https://github.com/enikosoft/weather-widget',
+  },
+  {
+    name: 'E-commerce store',
+    // url: 'https://smart-food.enikosoft.com/',
+    description: `E-commerce project on Next.js, React, Tailwind. Online shop for selling clothes. Adaptive and responsive design. Full checkout proccess. Using clerk auth.`,
+    // img: smartFoodLogo,
+    stack: [
+      // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
+      // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
+    ],
+    // git: 'https://github.com/enikosoft/next-ecommerce-smart-food',
+  },
+  {
+    name: 'Library App',
+    url: 'https://haris-library-app.vercel.app/',
+    description: `Library project on React, Tailwind. Online shop for selling Books. Adaptive and responsive design. Full checkout proccess. User friendly and detailed web with Google Api.`,
+    // img: smartFoodLogo,
+    stack: [
+      // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
+      // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
+    ],
+    // git: 'https://github.com/enikosoft/next-ecommerce-smart-food',
   },
 ];
