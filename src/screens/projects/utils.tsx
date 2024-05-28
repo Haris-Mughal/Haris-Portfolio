@@ -150,6 +150,7 @@ export const customProjects: Project[] = [
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
       <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
       <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiAxios key="Axios" color="#2F75C0" className="text-[28px]" />,
 
       // <FaGoogle key="google" color="#000" className="text-[28px]" />,
     ],
@@ -157,7 +158,7 @@ export const customProjects: Project[] = [
   },
   {
     name: 'E-commerce store',
-    // url: 'https://smart-food.enikosoft.com/',
+    url: 'https://haris-ecommerce-store.vercel.app/',
     description: `E-commerce project on Next.js, React, Tailwind. Online shop for selling clothes. Adaptive and responsive design. Full checkout proccess. Using clerk auth.`,
     // img: smartFoodLogo,
     stack: [
@@ -169,12 +170,12 @@ export const customProjects: Project[] = [
       // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
       // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
     ],
-    // git: 'https://github.com/enikosoft/next-ecommerce-smart-food',
+    git: 'https://github.com/Haris-Mughal/E-Commerce-Store',
   },
   {
     name: 'Library App',
     url: 'https://haris-library-app.vercel.app/',
-    description: `Library project on React, Tailwind. Online shop for selling Books. Adaptive and responsive design. Full checkout proccess. User friendly and detailed web with Google Api.`,
+    description: `Library project on React, Tailwind. Online shop for selling Books. Adaptive and responsive design. Full checkout proccess. User friendly and detailed web with Google Books Api.`,
     // img: smartFoodLogo,
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
@@ -182,9 +183,65 @@ export const customProjects: Project[] = [
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
       <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
       <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiAxios key="Axios" color="#2F75C0" className="text-[28px]" />,
+
       // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
       // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
     ],
     git: 'https://github.com/Haris-Mughal/Library-Web-App',
+  },
+  {
+    name: 'News App',
+    // url: 'https://haris-library-app.vercel.app/',
+    description: `News App project on React, Tailwind. Watch Online News to know about the situations in the world. Adaptive and responsive design. Full details News reports.`,
+    // img: smartFoodLogo,
+    stack: [
+      // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiAxios key="Axios" color="#2F75C0" className="text-[28px]" />,
+
+      // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
+      // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/News-App',
+  },
+  {
+    name: 'Currency Converter App',
+    // url: 'https://haris-library-app.vercel.app/',
+    description: `Currency Converter used for convert your native currency to foreign's currency. Adaptive and responsive design.`,
+    // img: smartFoodLogo,
+    stack: [
+      // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiAxios key="Axios" color="#2F75C0" className="text-[28px]" />,
+
+      // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
+      // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/Currency-Converter-App',
+  },
+  {
+    name: 'Recipe App',
+    // url: 'https://haris-library-app.vercel.app/',
+    description: `Recipe App project on React, TailwindCSS. Buy Online Foods Both Desi food and Fast food. User friendly and responsive design. Search for your favorite recipes.`,
+    // img: smartFoodLogo,
+    stack: [
+      // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiRedux key="redux" color="#86cf35" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiAxios key="Axios" color="#2F75C0" className="text-[28px]" />,
+
+      // <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
+      // <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/Recipe-App',
   },
 ];
