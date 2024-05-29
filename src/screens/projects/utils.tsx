@@ -141,8 +141,8 @@ export const customProjects: Project[] = [
     git: 'https://github.com/Haris-Mughal/Haris-Portfolio.git',
   },
   {
-    name: 'Weather React App',
-    // url: 'https://weather.enikosoft.com/',
+    name: 'Weather App',
+    url: 'https://haris-weather-web.vercel.app/',
     description: `React/Typescript/StyledComponent/reduxToolkit/ApiIntegration. You can find weather and current location time for any cities, searched by Google Place Api. Adaptive and responsive design.`,
     // img: weatherAppLofo,
     stack: [
