@@ -37,13 +37,13 @@ import {
 // import s2eLofo from 'assets/images/s2e-logo.webp';
 // import smartFoodLogo from 'assets/images/smart-food.png';
 // import viktreLofo from 'assets/images/viktre-logo.jpeg';
-// import weatherAppLofo from 'assets/images/weather-app.png';
+import weatherApp from 'assets/images/weather-app.png';
 // import porfolioLogo from '../../../public/logo.png';
 
 export interface Project {
   name: string;
   description: string;
-  // img: string;
+  img: string;
   stack: JSX.Element[];
   url?: string;
   git?: string;
@@ -109,7 +109,7 @@ export const comerciaProjects: Project[] = [
     description: `Team size: 2 (Me & Huzaifa) .The main goal of the project is to allow a
         user to see nfts on the social projects. My responsibilities were creating new functionality, creating new site versions (their
       maintaining), bugs fixing.`,
-    // img: viktreLofo,
+    img: '',
     stack: [
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
@@ -131,7 +131,7 @@ export const customProjects: Project[] = [
       showcasing my expertise in building responsive and dynamic web applications.
       Dive into my code, discover my skills,
       and get in touch to discuss exciting opportunities. Let's bring ideas to life through technology!`,
-    // img: porfolioLogo,
+    img: '',
     stack: [
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
@@ -144,7 +144,7 @@ export const customProjects: Project[] = [
     name: 'Weather App',
     url: 'https://haris-weather-web.vercel.app/',
     description: `React/Typescript/StyledComponent/reduxToolkit/ApiIntegration. You can find weather and current location time for any cities, searched by Google Place Api. Adaptive and responsive design.`,
-    // img: weatherAppLofo,
+    img: weatherApp,
     stack: [
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
@@ -160,7 +160,7 @@ export const customProjects: Project[] = [
     name: 'E-commerce store',
     url: 'https://haris-ecommerce-store.vercel.app/',
     description: `E-commerce project on Next.js, React, Tailwind. Online shop for selling clothes. Adaptive and responsive design. Full checkout proccess. Using clerk auth.`,
-    // img: smartFoodLogo,
+    img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
@@ -176,7 +176,7 @@ export const customProjects: Project[] = [
     name: 'Library App',
     url: 'https://haris-library-app.vercel.app/',
     description: `Library project on React, Tailwind. Online shop for selling Books. Adaptive and responsive design. Full checkout proccess. User friendly and detailed web with Google Books Api.`,
-    // img: smartFoodLogo,
+    img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
@@ -194,7 +194,7 @@ export const customProjects: Project[] = [
     name: 'News App',
     // url: 'https://haris-library-app.vercel.app/',
     description: `News App project on React, Tailwind. Watch Online News to know about the situations in the world. Adaptive and responsive design. Full details News reports.`,
-    // img: smartFoodLogo,
+    img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
@@ -212,7 +212,7 @@ export const customProjects: Project[] = [
     name: 'Currency Converter App',
     // url: 'https://haris-library-app.vercel.app/',
     description: `Currency Converter used for convert your native currency to foreign's currency. Adaptive and responsive design.`,
-    // img: smartFoodLogo,
+    img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
@@ -230,7 +230,7 @@ export const customProjects: Project[] = [
     name: 'Recipe App',
     // url: 'https://haris-library-app.vercel.app/',
     description: `Recipe App project on React, TailwindCSS. Buy Online Foods Both Desi food and Fast food. User friendly and responsive design. Search for your favorite recipes.`,
-    // img: smartFoodLogo,
+    img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
