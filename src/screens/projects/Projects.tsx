@@ -7,12 +7,12 @@ import {DonwloadCVButton} from 'components/DownloadCVButton';
 export const Projects = () => {
   const data = [
     {
-      label: 'Comercial',
-      value: 'comercial',
-    },
-    {
       label: 'Personal',
       value: 'personal',
+    },
+    {
+      label: 'Comercial',
+      value: 'comercial',
     },
   ];
   const [activeTab, setActiveTab] = useState(data[0].value);
@@ -30,18 +30,18 @@ export const Projects = () => {
       </div>
       <div className="mb-8">
         <button
-          title="Comercial projects"
-          onClick={() => setActiveTab('comercial')}
-          className={activeTab === 'comercial' ? `btn-active` : 'btn'}
-        >
-          Comercial
-        </button>
-        <button
           title="Personal projects"
           onClick={() => setActiveTab('personal')}
           className={activeTab === 'personal' ? `btn-active` : 'btn'}
         >
           Personal
+        </button>
+        <button
+          title="Comercial projects"
+          onClick={() => setActiveTab('comercial')}
+          className={activeTab === 'comercial' ? `btn-active` : 'btn'}
+        >
+          Comercial
         </button>
       </div>
       <>

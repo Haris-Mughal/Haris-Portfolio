@@ -1,5 +1,5 @@
 import {DonwloadCVButton} from 'components/DownloadCVButton';
-// import {skillset} from './utils';
+import {skillset} from './utils';
 
 export const Technologies = () => {
   return (
@@ -13,7 +13,7 @@ export const Technologies = () => {
       </div>
 
       <div className="w-full">
-        {/* {skillset.map((skill) => (
+        {skillset.map((skill) => (
           <>
             {skill.name && (
               <div className="flex flex-row pb-6 pt-12">
@@ -43,7 +43,7 @@ export const Technologies = () => {
               ))}
             </div>
           </>
-        ))} */}
+        ))}
       </div>
 
       <div className="mt-12 w-full">
