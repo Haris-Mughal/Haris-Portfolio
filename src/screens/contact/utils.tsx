@@ -1,5 +1,5 @@
 import {BsGlobe, BsStackOverflow} from 'react-icons/bs';
-import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa';
+import {FaDiscord, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaSlack} from 'react-icons/fa';
 import {SiGmail, SiLeetcode} from 'react-icons/si';
 
 const handleOpenSocialNetwork = (url: string) => () => {
@@ -105,6 +105,30 @@ export const socialNetworks = (size: number = 45, isFooter = false) => [
   </button>,
   <button title="Website" key="website" onClick={handleOpenSocialNetwork('https://muhammad-haris-ahsan.vercel.app/')}>
     <BsGlobe
+      size={size}
+      className={`m-auto text-[${size}px] ${
+        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
+      } hover:cursor-pointer`}
+    />
+  </button>,
+  <button
+    title="Discord"
+    key="discord"
+    onClick={handleOpenSocialNetwork('https://discordapp.com/users/770216498613452801')}
+  >
+    <FaDiscord
+      size={size}
+      className={`m-auto text-[${size}px] ${
+        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
+      } hover:cursor-pointer`}
+    />
+  </button>,
+  <button
+    title="ICodeGuru-Slack"
+    key="ICodeGuru-Slack"
+    onClick={handleOpenSocialNetwork('https://icodeguru.slack.com/team/U07266W269Y')}
+  >
+    <FaSlack
       size={size}
       className={`m-auto text-[${size}px] ${
         isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
