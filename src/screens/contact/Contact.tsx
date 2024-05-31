@@ -53,8 +53,8 @@ export const Contact = () => {
       </div>
       <div className="flex flex-col pt-8 lg:flex-row lg:pt-32">
         <div className="flex w-[40%] flex-col">
-          <div className="ms-[-20px] flex flex-col">
-            <h3 className="ms-[-35px] text-center font-bold text-primaryColor">FIND ME ON</h3>
+          <div className="ms-[-6px] flex flex-col">
+            <h3 className="ms-[-15px] text-center font-bold text-primaryColor">FIND ME ON</h3>
             <p className=" items-start text-primaryColor">
               Please don`t hesitate to
               <span className="text-lg text-themePrimaryColor"> connect.</span>

@@ -1,7 +1,6 @@
-import {BiLogoGmail} from 'react-icons/bi';
-import {FaGithub, FaInstagramSquare, FaLinkedin, 
-  // FaTelegram
-} from 'react-icons/fa';
+import {BsGlobe, BsStackOverflow} from 'react-icons/bs';
+import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa';
+import {SiGmail, SiLeetcode} from 'react-icons/si';
 
 const handleOpenSocialNetwork = (url: string) => () => {
   window.open(url, '_blank');
@@ -11,11 +10,11 @@ const handleOpenGmail = () => {
   window.location.href = `mailto:${'harismirza3456@gmail.com'}`;
 };
 
-export const socialNetworks = (size: number = 54, isFooter = false) => [
+export const socialNetworks = (size: number = 45, isFooter = false) => [
   <button
-    title="linkedin"
+    title="LinkedIn"
     key="linkedin"
-    className='target-blank'
+    className="target-blank"
     onClick={handleOpenSocialNetwork('https://www.linkedin.com/in/muhammad-haris-ahsan-825113249/')}
   >
     <FaLinkedin
@@ -25,8 +24,26 @@ export const socialNetworks = (size: number = 54, isFooter = false) => [
       } hover:cursor-pointer`}
     />
   </button>,
-  <button title="github" key="github" className='target-blank' onClick={handleOpenSocialNetwork('https://github.com/haris-mughal/')}>
+  <button
+    title="Github"
+    key="github"
+    className="target-blank"
+    onClick={handleOpenSocialNetwork('https://github.com/haris-mughal/')}
+  >
     <FaGithub
+      size={size}
+      className={`m-auto text-[${size}px] ${
+        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
+      } hover:cursor-pointer`}
+    />
+  </button>,
+  <button
+    title="Leet Code"
+    key="leetCode"
+    className="target-blank"
+    onClick={handleOpenSocialNetwork('https://leetcode.com/u/Muhammad_Haris_Ahsan/')}
+  >
+    <SiLeetcode
       size={size}
       className={`m-auto text-[${size}px] ${
         isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
@@ -43,19 +60,51 @@ export const socialNetworks = (size: number = 54, isFooter = false) => [
   //   />
   // </button>,
   <button
-    title="instagram"
+    title="Instagram"
     key="instagram"
     onClick={handleOpenSocialNetwork('https://www.instagram.com/you_call_me_harii_/')}
   >
-    <FaInstagramSquare
+    <FaInstagram
       size={size}
       className={`m-auto text-[${size}px] ${
         isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
       } hover:cursor-pointer`}
     />
   </button>,
-  <button title="gmail" key="gmail" onClick={handleOpenGmail}>
-    <BiLogoGmail
+  <button
+    title="Facebook"
+    key="facebook"
+    onClick={handleOpenSocialNetwork('https://www.facebook.com/profile.php?id=100061029926998')}
+  >
+    <FaFacebook
+      size={size}
+      className={`m-auto text-[${size}px] ${
+        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
+      } hover:cursor-pointer`}
+    />
+  </button>,
+  <button title="G-mail" key="gmail" onClick={handleOpenGmail}>
+    <SiGmail
+      size={size}
+      className={`m-auto text-[${size}px] ${
+        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
+      } hover:cursor-pointer`}
+    />
+  </button>,
+  <button
+    title="StackOverFlow"
+    key="stackOverFlow"
+    onClick={handleOpenSocialNetwork('https://stackoverflow.com/users/22488003/haris-mughal')}
+  >
+    <BsStackOverflow
+      size={size}
+      className={`m-auto text-[${size}px] ${
+        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
+      } hover:cursor-pointer`}
+    />
+  </button>,
+  <button title="Website" key="website" onClick={handleOpenSocialNetwork('https://muhammad-haris-ahsan.vercel.app/')}>
+    <BsGlobe
       size={size}
       className={`m-auto text-[${size}px] ${
         isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'

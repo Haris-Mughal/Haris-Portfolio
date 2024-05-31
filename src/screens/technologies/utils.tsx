@@ -1,5 +1,6 @@
 // import {BiLogoPostgresql} from 'react-icons/bi';
 // import {BsBootstrap} from 'react-icons/bs';
+import {BsGithub} from 'react-icons/bs';
 import {
   // FaBootstrap,
   FaCss3,
@@ -15,11 +16,15 @@ import {
   // SiApollographql,
   SiBootstrap,
   SiExpress,
+  SiFigma,
+  SiFirebase,
+  SiGit,
   // SiGraphql,
   SiJavascript,
   SiMongodb,
   // SiNestjs,
   SiNextdotjs,
+  SiPostman,
   SiRedux,
   SiStripe,
   SiTailwindcss,
@@ -86,7 +91,7 @@ export const skillset = [
         expirience: 2,
       },
       {
-        label: 'Tailwind',
+        label: 'TailwindCSS',
         icon: <SiTailwindcss color="#3FBDCC" className="text-[48px] sm:text-[64px]" />,
         expirience: 2,
       },
@@ -121,6 +126,11 @@ export const skillset = [
         icon: <SiMongodb color="#2c913f" className="text-[48px] sm:text-[64px]" />,
         expirience: 1.5,
       },
+      {
+        label: 'Google firebase',
+        icon: <SiFirebase color="#edb825" className="text-[48px] sm:text-[64px]" />,
+        expirience: 1.5,
+      },
       // {
       //   label: 'Postgresql',
       //   icon: <BiLogoPostgresql color="#3A6596" className="text-[48px] sm:text-[64px]" />,
@@ -137,8 +147,28 @@ export const skillset = [
       //   expirience: null,
       // },
       {
+        label: 'Github',
+        icon: <BsGithub color="#fff" className="text-[48px] sm:text-[64px]" />,
+        expirience: null,
+      },
+      {
         label: 'Stripe',
         icon: <SiStripe color="#6058f8" className="text-[48px] sm:text-[64px]" />,
+        expirience: null,
+      },
+      {
+        label: 'Figma',
+        icon: <SiFigma color="#e73659" className="text-[48px] sm:text-[64px]" />,
+        expirience: null,
+      },
+      {
+        label: 'Git',
+        icon: <SiGit color="#f46a00" className="text-[48px] sm:text-[64px]" />,
+        expirience: null,
+      },
+      {
+        label: 'Postman',
+        icon: <SiPostman color="#f48014" className="text-[48px] sm:text-[64px]" />,
         expirience: null,
       },
       // {
