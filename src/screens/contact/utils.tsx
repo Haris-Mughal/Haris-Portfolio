@@ -1,4 +1,3 @@
-import {BsGlobe, BsStackOverflow} from 'react-icons/bs';
 import {FaDiscord, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaSlack} from 'react-icons/fa';
 import {SiGmail, SiLeetcode} from 'react-icons/si';
 
@@ -91,26 +90,7 @@ export const socialNetworks = (size: number = 45, isFooter = false) => [
       } hover:cursor-pointer`}
     />
   </button>,
-  <button
-    title="StackOverFlow"
-    key="stackOverFlow"
-    onClick={handleOpenSocialNetwork('https://stackoverflow.com/users/22488003/haris-mughal')}
-  >
-    <BsStackOverflow
-      size={size}
-      className={`m-auto text-[${size}px] ${
-        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
-      } hover:cursor-pointer`}
-    />
-  </button>,
-  <button title="Website" key="website" onClick={handleOpenSocialNetwork('https://muhammad-haris-ahsan.vercel.app/')}>
-    <BsGlobe
-      size={size}
-      className={`m-auto text-[${size}px] ${
-        isFooter ? 'text-tabBarActiveTextColor' : 'text-themePrimaryColor'
-      } hover:cursor-pointer`}
-    />
-  </button>,
+
   <button
     title="Discord"
     key="discord"
