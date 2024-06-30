@@ -10,7 +10,7 @@ import {IoMdDownload} from 'react-icons/io';
 import {useMediaQuery} from 'react-responsive';
 import {mediaBreakpoints} from 'responsive';
 
-export const PdfPriever = () => {
+export const PdfPreviewer = () => {
   const fullScreenPluginInstance = fullScreenPlugin();
 
   const {EnterFullScreen} = fullScreenPluginInstance;
@@ -22,8 +22,8 @@ export const PdfPriever = () => {
     query: `(max-width: ${mediaBreakpoints.sm}px)`,
   });
 
-  console.log('import.meta.env.VITE_CV_PATH', import.meta.env.VITE_CV_PATH);
-  const [, handleDownload] = useDownloadPdf(import.meta.env.VITE_CV_PATH, 'Haris-developer-CV.pdf');
+  // console.log('import.meta.env.VITE_CV_PATH', import.meta.env.VITE_CV_PATH);
+  const [, handleDownload] = useDownloadPdf(import.meta.env.VITE_CV_PATH, 'Haris-Developer-CV.pdf');
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
       <div className="h-full overflow-hidden p-2">
@@ -73,4 +73,4 @@ export const PdfPriever = () => {
   );
 };
 
-export default PdfPriever;
+export default PdfPreviewer;

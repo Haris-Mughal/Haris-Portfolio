@@ -1,1 +1,1 @@
-export * from './DonwloadCVButton';
+export * from './DownloadCVButton';
