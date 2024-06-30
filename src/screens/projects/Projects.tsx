@@ -2,7 +2,7 @@ import {useState} from 'react';
 import ProjectCard from './ProjectCard';
 import {comerciaProjects, customProjects} from './utils';
 
-import {DonwloadCVButton} from 'components/DownloadCVButton';
+import {DownloadCVButton} from 'components/DownloadCVButton';
 
 export const Projects = () => {
   const data = [
@@ -61,7 +61,7 @@ export const Projects = () => {
       </>
       <div className="mt-12 w-full">
         <i className="fond-light pr-4 text-lg text-primaryColor">More information</i>
-        <DonwloadCVButton isSmall />
+        <DownloadCVButton isSmall />
       </div>
     </>
   );

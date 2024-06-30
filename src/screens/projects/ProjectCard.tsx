@@ -47,7 +47,7 @@ const ProjectCard = ({project, isDialog = false, isOpenDialog, toggleShowMore}: 
                   {item}
                   <span
                     className="py-1/2 absolute left-1/2 m-5 mx-auto mt-10 -translate-x-1/2 translate-y-full rounded-md bg-white px-2 text-center
-text-sm font-semibold text-black opacity-0 transition-opacity group-hover:opacity-100"
+                    text-sm font-semibold text-black opacity-0 transition-opacity group-hover:opacity-100"
                   >
                     {item.key}
                   </span>
