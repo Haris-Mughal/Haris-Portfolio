@@ -29,6 +29,7 @@ import {
   SiStripe,
   SiTailwindcss,
   SiTypescript,
+  SiZod,
 } from 'react-icons/si';
 
 export const skillset = [
@@ -141,11 +142,11 @@ export const skillset = [
   {
     name: 'Others',
     items: [
-      // {
-      //   label: 'AWS Serverless, EC2, S3',
-      //   icon: <SiAmazonaws color="#F1941D" className="text-[48px] sm:text-[64px]" />,
-      //   expirience: null,
-      // },
+      {
+        label: 'Zod',
+        icon: <SiZod color="#2F75C0" className="text-[48px] sm:text-[64px]" />,
+        expirience: null,
+      },
       {
         label: 'Github',
         icon: <BsGithub color="#fff" className="text-[48px] sm:text-[64px]" />,

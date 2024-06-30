@@ -1,4 +1,4 @@
-import {DonwloadCVButton} from 'components/DownloadCVButton';
+import {DownloadCVButton} from 'components/DownloadCVButton';
 import {skillset} from './utils';
 
 export const Technologies = () => {
@@ -48,7 +48,7 @@ export const Technologies = () => {
 
       <div className="mt-12 w-full">
         <i className="fond-light pr-4 text-lg text-primaryColor">More information</i>
-        <DonwloadCVButton isSmall />
+        <DownloadCVButton isSmall />
       </div>
     </div>
   );
