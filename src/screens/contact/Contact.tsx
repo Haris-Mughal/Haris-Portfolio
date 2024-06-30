@@ -4,14 +4,43 @@ import {socialNetworks} from './utils';
 
 export const Contact = () => {
   const [msg, setMsg] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [subject, setSubject] = useState<string>('');
+  const [status, setStatus] = useState<string>('');
+
+  const handleSubmit = async () => {
+    const res = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+        subject,
+        message: msg,
+      }),
+    });
+
+    if (res.status === 200) {
+      setStatus('Email sent successfully!');
+      setMsg('');
+      setEmail('');
+      setSubject('');
+    } else {
+      setStatus('Error sending email');
+    }
+  };
 
   const contacts = [
     {
       field: 'email',
       component: (
         <input
+          title="email"
           type="email"
-          className="border-b-[0.5px] border-dashed border-[#84099c] bg-transparent pl-2 focus-visible:outline-none active:outline-none"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="border-b-[0.5px] border-dashed border-themePrimaryColor bg-transparent pl-2 focus-visible:outline-none active:outline-none"
         />
       ),
     },
@@ -19,8 +48,11 @@ export const Contact = () => {
       field: 'subject',
       component: (
         <input
+          title="subject"
           type="text"
-          className="border-b-[0.5px] border-dashed border-[#84099c] bg-transparent pl-2 focus-visible:outline-none active:outline-none"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          className="border-b-[0.5px] border-dashed border-themePrimaryColor bg-transparent pl-2 focus-visible:outline-none active:outline-none"
         />
       ),
     },
@@ -30,7 +62,7 @@ export const Contact = () => {
         <div className="w-full">
           <TextareaAutosize
             minRows={3}
-            className="resize-none overflow-hidden border-b-[0.5px] border-dashed border-[#84099c] bg-transparent pl-2 text-primaryColor focus-visible:outline-none active:border-none"
+            className="resize-none overflow-hidden border-b-[0.5px] border-dashed border-themePrimaryColor bg-transparent pl-2 text-primaryColor focus-visible:outline-none active:border-none"
             maxRows={10}
             cols={19}
             value={msg}
@@ -69,11 +101,19 @@ export const Contact = () => {
             .contactMe<span className=" text-xl text-primaryColor">{' {'}</span>
           </p>
           {contacts.map(({field, component}) => (
-            <p className="line-contact flex pl-10  text-lg text-primaryColor" key={field}>
+            <p className="line-contact flex pl-10 text-lg text-primaryColor" key={field}>
               {field}:{component}
             </p>
           ))}
+          <button
+            type="submit"
+            className="btn hover:bg-themeSecondaryColor rounded bg-themePrimaryColor p-2 px-2 text-lg text-white"
+            onClick={handleSubmit}
+          >
+            Submit
+          </button>
           <p className="line-contact text-xl text-primaryColor">{'}'}</p>
+          {status && <p className="pt-4 text-primaryColor">{status}</p>}
         </div>
       </div>
     </div>
