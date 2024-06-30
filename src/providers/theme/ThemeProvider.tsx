@@ -4,7 +4,7 @@ import {Theme} from './types';
 
 export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
   const currentTheme = localStorage.getItem('theme') as Theme;
-  const [theme, setTheme] = useState<Theme>(currentTheme || Theme.DARK);
+  const [theme, setTheme] = useState<Theme>(currentTheme || Theme.BLUE);
 
   const toggleTheme = (theme: Theme) => {
     setTheme(theme);
@@ -14,8 +14,8 @@ export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
     const currentTheme = localStorage.getItem('theme');
 
     if (!currentTheme) {
-      if (window.matchMedia && window.matchMedia('prefers-color-scheme: dark)')) {
-        setTheme(Theme.DARK);
+      if (window.matchMedia && window.matchMedia('prefers-color-scheme: blue)')) {
+        setTheme(Theme.BLUE);
       }
     } else {
       setTheme(currentTheme as Theme);
@@ -32,12 +32,12 @@ export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
     }
 
     if (
-      theme === Theme.BLUE ||
-      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: blue)').matches)
+      theme === Theme.DARK ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
-      document.documentElement.classList.add('blue');
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('blue');
+      document.documentElement.classList.remove('dark');
     }
 
     if (

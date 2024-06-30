@@ -1,4 +1,4 @@
-import {DonwloadCVButton} from 'components/DownloadCVButton';
+import {DownloadCVButton} from 'components/DownloadCVButton';
 import {AppContext, AppContextInterface} from 'providers/application';
 import {useContext} from 'react';
 import {useLocation, useNavigate} from 'react-router-dom';
@@ -41,7 +41,7 @@ export const Home = () => {
             repeat={Infinity}
           />
           <div className="mt-10 flex w-full flex-col sm:flex-row">
-            <DonwloadCVButton />
+            <DownloadCVButton />
             <button
               title="open cv"
               className="btn-secondary w-full rounded px-12 py-4 hover:brightness-110 sm:w-fit"
