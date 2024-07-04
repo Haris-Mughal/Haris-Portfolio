@@ -11,7 +11,7 @@ export const DownloadCVButton = ({isSmall}: {isSmall?: boolean}) => {
 
   return mobile ? (
     <a
-      href="/cv.pdf"
+      href="/haris-developer-cv.pdf"
       download="Haris-Developer-CV.pdf"
       className={`${!isSmall ? 'mb-8 mr-10 w-full rounded px-12 py-4 text-center sm:mb-0 sm:w-fit' : ''}  btn`}
       target="_blank"
@@ -20,7 +20,7 @@ export const DownloadCVButton = ({isSmall}: {isSmall?: boolean}) => {
     </a>
   ) : (
     <a
-      href="/cv.pdf"
+      href="/haris-developer-cv.pdf"
       download="Haris-Developer-CV.pdf"
       className={`${!isSmall ? 'mb-8 mr-10 w-full rounded px-12 py-4 sm:mb-0 sm:w-fit' : ''}  btn`}
       target="_blank"

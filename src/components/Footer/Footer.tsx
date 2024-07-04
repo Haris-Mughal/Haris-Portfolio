@@ -1,10 +1,10 @@
 import {ThemeContext} from 'providers/theme/ThemeContex';
 import {ThemeContextInterface} from 'providers/theme/types';
 
+import {socialNetworks} from '(screens)/contact/utils';
 import {Suspense, lazy, useContext, useState} from 'react';
 import {createPortal} from 'react-dom';
 import {MdOutlineDarkMode} from 'react-icons/md';
-import {socialNetworks} from 'screens/contact/utils';
 
 const ThemeDialog = lazy(() => import('../../components/ThemeDialog/ThemeDialog'));
 
