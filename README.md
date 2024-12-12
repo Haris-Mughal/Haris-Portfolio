@@ -19,18 +19,11 @@ Check live demonstration <a href="https://muhammad-haris-ahsan.vercel.app/"><str
 - My Projects
 - Contact information
 
-## Run Locally
-
-Run this command
-
-- `git clone https://github.com/Haris-Mughal/Haris-Portfolio.git`
-- `npm install`
-- `npm run dev`
-<p>You are now in the dev environment and you can play around
-
 ## 🌱 Contribution
 
 If you have any suggestions on what to improve in Reactfolio and would like to share them, feel free to leave an issue or fork project to implement your own ideas
 
+
+> Developed with 🤍 by Haris Mughal
 <!-- VITE_CV_PATH="/public/haris-developer-cv.pdf"
 RESEND_API_KEY="re_PQKB7h6M_2sDgMv2dn9EUQrbP75gHhyPv" -->
