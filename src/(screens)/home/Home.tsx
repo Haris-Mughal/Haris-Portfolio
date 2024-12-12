@@ -54,7 +54,7 @@ export const Home = () => {
       </div>
       <div className="static: w-ful top-0 flex justify-center xl:relative xl:top-[-64px] xl:w-1/2 xl:pt-10">
         <img
-          className="h-[300px] w-[215px] md:h-[400px] md:w-[286px] xl:h-[500px] xl:w-[358px]"
+          className="h-[300px] w-[300px] md:h-[400px] md:w-[400px] xl:h-[500px] xl:w-[500px]"
           loading="lazy"
           src={me}
           alt="myPhoto"
