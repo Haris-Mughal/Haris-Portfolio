@@ -9,8 +9,25 @@ export const Contact = () => {
   const [status, setStatus] = useState<string>('');
 
   const handleSubmit = async () => {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfRcA-KwGTqm1qYklukZcRWkXKS466B9-DQtQQh7AX_k5iHYgO8_HFGtQKY3nyl7_kUA/exec';
+  
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setStatus('⚠️Please enter a valid email address.');
+      return;
+    }
+  
+    if (!subject || subject.trim().length === 0) {
+      setStatus('⚠️Please enter a subject.');
+      return;
+    }
+  
+    if (!msg || msg.trim().length === 0) {
+      setStatus('⚠️Please enter a message.');
+      return;
+    }
+  
     try {
-      const res = await fetch('/api/send-email', {
+      const response = await fetch(scriptURL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -22,21 +39,21 @@ export const Contact = () => {
         }),
       });
   
-      if (res.ok) { // `res.ok` checks for 2xx status codes
-        setStatus('Email sent successfully!');
+      if (response.ok) {
+        setStatus('✅Message sent successfully!');
         setMsg('');
         setEmail('');
         setSubject('');
       } else {
-        const errorData = await res.json(); // Attempt to parse server error message
-        setStatus(errorData.message || 'Error sending email'); // Show server-provided error or default
+        const err = await response.json();
+        setStatus(`⚠️${err} ||⚠️Error sending message.`);
       }
     } catch (error) {
-      setStatus('Something went wrong. Please try again later.'); // Handle network or unexpected errors
-      console.error('Error:', error); // Log the error for debugging
+      setStatus('⚠️Something went wrong. Please try again later.');
+      console.error('Error:', error);
     }
   };
-  
+    
 
   const contacts = [
     {
