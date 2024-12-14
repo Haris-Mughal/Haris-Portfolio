@@ -9,7 +9,7 @@ export const Contact = () => {
   const [status, setStatus] = useState<string>('');
 
   const handleSubmit = async () => {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwfRcA-KwGTqm1qYklukZcRWkXKS466B9-DQtQQh7AX_k5iHYgO8_HFGtQKY3nyl7_kUA/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYUFluP0qz_kixSdz884RR8EJf0vDni9Z86e2TBTik/dev';
   
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setStatus('⚠️Please enter a valid email address.');
