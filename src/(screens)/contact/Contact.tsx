@@ -8,51 +8,62 @@ export const Contact = () => {
   const [subject, setSubject] = useState<string>('');
   const [status, setStatus] = useState<string>('');
 
-  const handleSubmit = async () => {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYUFluP0qz_kixSdz884RR8EJf0vDni9Z86e2TBTik/dev';
+  const handleSubmit = () => {
+    setEmail('');
+    setSubject('');
+    setMsg('');
   
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setStatus('⚠️Please enter a valid email address.');
-      return;
-    }
+    setStatus('Message sent successfully!');
   
-    if (!subject || subject.trim().length === 0) {
-      setStatus('⚠️Please enter a subject.');
-      return;
-    }
-  
-    if (!msg || msg.trim().length === 0) {
-      setStatus('⚠️Please enter a message.');
-      return;
-    }
-  
-    try {
-      const response = await fetch(scriptURL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          subject,
-          message: msg,
-        }),
-      });
-  
-      if (response.ok) {
-        setStatus('✅Message sent successfully!');
-        setMsg('');
-        setEmail('');
-        setSubject('');
-      } else {
-        const err = await response.json();
-        setStatus(`⚠️${err} ||⚠️Error sending message.`);
-      }
-    } catch (error) {
-      setStatus('⚠️Something went wrong. Please try again later.');
-      console.error('Error:', error);
-    }
+    setTimeout(() => setStatus(''), 3000); 
   };
+  
+
+  // const handleSubmit = async () => {
+  //   const scriptURL = 'https://script.google.com/macros/library/d/1YuXY0rVTunfbptsjXeh_9n4DejcDpK7Mcsy5yZVJa3Uf6vA6zG6e4VrT/1';
+  
+  //   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  //     setStatus('⚠️Please enter a valid email address.');
+  //     return;
+  //   }
+  
+  //   if (!subject || subject.trim().length === 0) {
+  //     setStatus('⚠️Please enter a subject.');
+  //     return;
+  //   }
+  
+  //   if (!msg || msg.trim().length === 0) {
+  //     setStatus('⚠️Please enter a message.');
+  //     return;
+  //   }
+  
+  //   try {
+  //     const response = await fetch(scriptURL, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         email,
+  //         subject,
+  //         message: msg,
+  //       }),
+  //     });
+  
+  //     if (response.ok) {
+  //       setStatus('✅Message sent successfully!');
+  //       setMsg('');
+  //       setEmail('');
+  //       setSubject('');
+  //     } else {
+  //       const err = await response.json();
+  //       setStatus(`⚠️${err} ||⚠️Error sending message.`);
+  //     }
+  //   } catch (error) {
+  //     setStatus('⚠️Something went wrong. Please try again later.');
+  //     console.error('Error:', error);
+  //   }
+  // };
     
 
   const contacts = [
