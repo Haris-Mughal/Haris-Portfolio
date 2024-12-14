@@ -9,27 +9,34 @@ export const Contact = () => {
   const [status, setStatus] = useState<string>('');
 
   const handleSubmit = async () => {
-    const res = await fetch('/api/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-        subject,
-        message: msg,
-      }),
-    });
-
-    if (res.status === 200) {
-      setStatus('Email sent successfully!');
-      setMsg('');
-      setEmail('');
-      setSubject('');
-    } else {
-      setStatus('Error sending email');
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          subject,
+          message: msg,
+        }),
+      });
+  
+      if (res.ok) { // `res.ok` checks for 2xx status codes
+        setStatus('Email sent successfully!');
+        setMsg('');
+        setEmail('');
+        setSubject('');
+      } else {
+        const errorData = await res.json(); // Attempt to parse server error message
+        setStatus(errorData.message || 'Error sending email'); // Show server-provided error or default
+      }
+    } catch (error) {
+      setStatus('Something went wrong. Please try again later.'); // Handle network or unexpected errors
+      console.error('Error:', error); // Log the error for debugging
     }
   };
+  
 
   const contacts = [
     {
