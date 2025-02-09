@@ -1,4 +1,5 @@
-# ⚡ Haris' Developer Portfolio  
+# ⚡ Haris' Developer Portfolio  <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" height="50" alt="Next.js icon"/>
+
 
 Welcome to my **VS Code-inspired Developer Portfolio**! 🚀 This is a showcase of my work as a **Full-Stack JavaScript Developer**, built with **Next.js, TypeScript, and Tailwind CSS**. The UI is designed to resemble **VS Code**, with **multiple themes** and a sleek, developer-friendly layout.  
 
@@ -31,20 +32,6 @@ Welcome to my **VS Code-inspired Developer Portfolio**! 🚀 This is a showcase 
 | **Tailwind CSS** | Fast & modern styling |
 | **React Hooks** | State & effect management |
 | **Vercel** | Deployment & hosting |
-
----
-
-## 📂 **Project Structure**  
-
-📦 **Haris-Portfolio**  
-┣ 📂 **public** → Static assets (images, icons, PDFs)  
-┣ 📂 **components** → Reusable UI components (Navbar, Footer, ThemeSwitcher)  
-┣ 📂 **pages** → Next.js pages (Home, About, Projects, Contact)  
-┣ 📂 **styles** → Tailwind CSS styles  
-┣ 📂 **context** → Theme context for dark/light/blue modes  
-┣ 📜 **next.config.js** → Next.js configurations  
-┣ 📜 **tailwind.config.js** → Tailwind CSS configurations  
-┗ 📜 **package.json** → Dependencies  
 
 ---
 
