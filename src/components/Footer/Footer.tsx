@@ -5,7 +5,7 @@ import {socialNetworks} from '(screens)/contact/utils';
 import {Suspense, lazy, useContext, useState} from 'react';
 import {createPortal} from 'react-dom';
 import {MdOutlineDarkMode} from 'react-icons/md';
-import LoadingSpinner from 'components/Loader/LoadingSpinner';
+import Loading from 'components/Loader/Loading';
 
 const ThemeDialog = lazy(() => import('../../components/ThemeDialog/ThemeDialog'));
 
@@ -24,7 +24,7 @@ export const Footer = ({mobileAndTablet}: {mobileAndTablet: boolean}) => {
 
       {themeDialogOpen &&
         createPortal(
-          <Suspense fallback={<LoadingSpinner />}>
+          <Suspense fallback={<Loading />}>
             <ThemeDialog setThemeDialogOpen={setThemeDialogOpen} />
           </Suspense>,
           sidebarContentEl
