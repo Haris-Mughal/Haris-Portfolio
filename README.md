@@ -25,5 +25,5 @@ If you have any suggestions on what to improve in Reactfolio and would like to s
 
 
 > Developed with 🤍 by Haris Mughal
-<!-- VITE_CV_PATH="/public/haris-developer-cv.pdf"
+<!-- VITE_CV_PATH="/public/harisDeveloperCV.pdf"
 RESEND_API_KEY="re_PQKB7h6M_2sDgMv2dn9EUQrbP75gHhyPv" -->
