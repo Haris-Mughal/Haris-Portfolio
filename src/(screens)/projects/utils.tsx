@@ -1,12 +1,3 @@
-// function utils() {
-//   return (
-//     <div>
-//       <></>
-//     </div>
-//   );
-// }
-// export default utils;
-
 // import {BiLogoPostgresql} from 'react-icons/bi';
 import {
   // FaNodeJs,
@@ -32,11 +23,6 @@ import {
   SiTypescript,
 } from 'react-icons/si';
 
-// import btfLofo from 'assets/images/btf-logo.png';
-// import cfLofo from 'assets/images/cfLogo.png';
-// import s2eLofo from 'assets/images/s2e-logo.webp';
-// import smartFoodLogo from 'assets/images/smart-food.png';
-// import viktreLofo from 'assets/images/viktre-logo.jpeg';
 import weatherApp from 'assets/images/weather-app.png';
 // import porfolioLogo from '../../../public/logo.png';
 
@@ -49,60 +35,136 @@ export interface Project {
   git?: string;
 }
 
-export const comerciaProjects: Project[] = [
-  // {
-  //   name: 'Community Funded',
-  //   description: `Team size: 10+. Platform streamlines fundraising and community management for education and healthcare sectors. Create branded,
-  //   mobile-optimized pages effortlessly and manage initiatives seamlessly. The platform integrates directly with
-  //   your brand, website, and existing payment processor. Ideal for inspiring donors and building engaged
-  //   communities.`,
-  //   img: cfLofo,
-  //   stack: [
-  //     <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-  //     <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-  //     <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-  //     <SiApollographql key="apollo" color="#E63CAD" className="text-[28px]" />,
-  //     <SiGraphql key="graphql" color="#E63CAD" className="text-[28px]" />,
-  //     <BiLogoPostgresql key="psql" color="#3A6596" className="text-[28px]" />,
-  //   ],
-  // },
-  // {
-  //   name: 'BTF',
-  //   description: `Team size: 5. Platform that supports athletes in their development on and off the field by giving them the tools to understand who they are and share
-  //   the context to their performance and their growth as a human being with the people most important to them on their journey.`,
-  //   img: btfLofo,
-  //   stack: [
-  //     <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-  //     <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-  //     <FaReact key="native" color="#5ED4F4" className="text-[28px]" />,
-  //     <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-  //     <SiMysql key="mysql" color="#3A6596" className="text-[28px]" />,
-  //     <SiPrisma key="prizma" color="#3294c9" className="text-[28px]" />,
-  //     <SiAmazonaws key="serverless" color="#F1941D" className="text-[28px]" />,
-  //   ],
-  // },
-  // {
-  //   name: 'Say2eat',
-  //   description: `Team size: 7. Say2eat helps restaurant chains increase direct
-  //   online sales, collect valuable consumer insights
-  //   and data, manage the customer relationship and
-  //   maximize customer loyalty. By enabling. personalized and fully automated conversations
-  //   with customers at scale, ordering food from your
-  //   favorite restaurants has become as frictionless
-  //   as messaging a friend. Say2eat provides a single
-  //   and seamless solution for all voice and message
-  //   applications (e.g Facebook Messenger, iMessage,
-  //   Amazon Echo, Google Home, etc.).
-  //   `,
-  //   img: s2eLofo,
-  //   stack: [
-  //     <SiNextdotjs key="next" className="text-[28px] text-black light:text-black" />,
-  //     <SiNestjs key="nestjs" color="#DA224C" className="text-[28px]" />,
-  //     <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-  //     <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-  //     <SiMongodb key="mongodb" color="#2c913f" className="text-[28px]" />,
-  //   ],
-  // },
+// export const fullStackProjects: Project[] = [
+//   {
+//     name: 'My Portfolio',
+//     url: 'https://muhammad-haris-ahsan.vercel.app/',
+//     description: `Welcome to my portfolio! Explore my diverse range of projects,
+//       showcasing my expertise in building responsive and dynamic web applications.
+//       Dive into my code, discover my skills,
+//       and get in touch to discuss exciting opportunities. Let's bring ideas to life through technology!`,
+//     img: '',
+//     stack: [
+//       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+//       <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+//       <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+//       <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+//     ],
+//     git: 'https://github.com/Haris-Mughal/Haris-Portfolio.git',
+//   },
+// ];
+
+export const personalProjects: Project[] = [
+  {
+    name: 'My Portfolio',
+    url: 'https://muhammad-haris-ahsan.vercel.app/',
+    description: `Welcome to my portfolio! Explore my diverse range of projects,
+      showcasing my expertise in building responsive and dynamic web applications.
+      Dive into my code, discover my skills,
+      and get in touch to discuss exciting opportunities. Let's bring ideas to life through technology!`,
+    img: '',
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/Haris-Portfolio.git',
+  },
+];
+
+export const teamProjects: Project[] = [
+  {
+    name: 'Comic Me – AI-Powered Comic Creation',
+    url: 'https://comicme.netlify.app/',
+    description: `Developed an AI-driven storytelling platform that transforms text prompts into illustrated comics within seconds, making high-quality comic creation accessible.
+    • Implemented cloud-based AI processing and database management to ensure seamless performance and scalability.
+    • Integrated Stable Diffusion for text-to-image and image-to-image transformations, enabling multi-style comic rendering.
+    • Enabled real-time editing, instant export (PDF/PNG), and social media sharing features for users.`,
+    img: '',
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/ComicMe',
+  },
+  {
+    name: 'ARMS – Autonomous Resource Management System',
+    url: 'https://arms-ui.vercel.app/',
+    description: `
+Developed an AI-powered system to autonomously track and optimize critical resources for astronauts and
+disaster-affected communities.
+• Implemented real-time monitoring of oxygen, food, power, and communication systems, ensuring efficient survival
+strategies.
+• Integrated machine learning models to predict survival time based on resource usage and astronaut health data.
+• Designed emergency alert mechanisms to notify mission control or emergency teams in critical situations.`,
+    img: '',
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/ARMS-UI',
+  },
+  {
+    name: 'AURAFem',
+    url: 'https://aura-fem.vercel.app/',
+    description: `
+Developed a FemTech web app for ovarian cancer with personalized AI-powered health support.
+• Created a conversational AI-agent using NLP for human-like responses and machine learning for continuous improvement.
+• Implemented emotional intelligence to enhance user interactions with empathetic responses.`,
+    img: '',
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/AURAFem-chatbot',
+  },
+  {
+    name: 'Smart Network Planning',
+    url: 'https://rajeshthangaraj1-smart-network-planning.hf.space/',
+    description: `
+Developed a 5G deployment solution leveraging ML, LLMs, and vector search for optimized network planning and
+improved connectivity.
+• Implemented AI-driven resource allocation and traffic balancing, optimizing 5G network deployment to reduce
+inefficiencies.
+• Automated complex tasks like network analysis and site selection, saving time and reducing errors in 5G planning.
+• Designed scalable architecture using Milvus for efficient processing of large datasets, ensuring seamless performance.`,
+    img: '',
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/Ai-Connectivity-Hackathon',
+  },
+  {
+    name: 'CosmoLearn',
+    url: 'https://xr-universe.vercel.app/',
+    description: `
+Developed an XR, AR, and VR educational platform for exploring the solar system.
+• Created interactive 3D solar system experiences to simplify complex astronomical concepts, enhancing student
+engagement.
+• Built a multi-platform solution with a web app and mobile app, integrated with GenAI for enhanced learning.
+• Led development, ensuring seamless compatibility across platforms and delivering a live demo for global audiences.`,
+    img: '',
+    stack: [
+      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
+      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
+      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
+      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
+    ],
+    git: 'https://github.com/Haris-Mughal/XR-Universe-WebUI',
+  },
+];
+
+export const staticProjects: Project[] = [
   {
     name: 'Nft Marketplace',
     url: 'https://haris-nftmarketplace.vercel.app/',
@@ -120,25 +182,6 @@ export const comerciaProjects: Project[] = [
       // <SiMongodb key="mongodb" color="#2c913f" className="text-[28px]" />,
     ],
     git: 'https://github.com/Haris-Mughal/NFT-Marketplace-App',
-  },
-];
-
-export const customProjects: Project[] = [
-  {
-    name: 'My Portfolio',
-    url: 'https://muhammad-haris-ahsan.vercel.app/',
-    description: `Welcome to my portfolio! Explore my diverse range of projects,
-      showcasing my expertise in building responsive and dynamic web applications.
-      Dive into my code, discover my skills,
-      and get in touch to discuss exciting opportunities. Let's bring ideas to life through technology!`,
-    img: '',
-    stack: [
-      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
-      <SiVite key="vite" color="#ea9b1c" className="text-[28px]" />,
-    ],
-    git: 'https://github.com/Haris-Mughal/Haris-Portfolio.git',
   },
   {
     name: 'Weather App',
@@ -159,7 +202,7 @@ export const customProjects: Project[] = [
   {
     name: 'E-commerce store',
     url: 'https://haris-ecommerce-store.vercel.app/',
-    description: `E-commerce project on Next.js, React, Tailwind. Online shop for selling clothes. Adaptive and responsive design. Full checkout proccess. Using clerk auth.`,
+    description: `E-commerce project on Next.js, React, Tailwind. Online shop for selling clothes. Adaptive and responsive design. Full checkout process. Using clerk auth.`,
     img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
@@ -175,7 +218,7 @@ export const customProjects: Project[] = [
   {
     name: 'Library App',
     url: 'https://haris-library-app.vercel.app/',
-    description: `Library project on React, Tailwind. Online shop for selling Books. Adaptive and responsive design. Full checkout proccess. User friendly and detailed web with Google Books Api.`,
+    description: `Library project on React, Tailwind. Online shop for selling Books. Adaptive and responsive design. Full checkout process. User friendly and detailed web with Google Books Api.`,
     img: '',
     stack: [
       // <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
