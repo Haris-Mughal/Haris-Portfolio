@@ -12,31 +12,31 @@ export const Contact = () => {
     setEmail('');
     setSubject('');
     setMsg('');
-  
+
     setStatus('Message sent successfully!');
-  
-    setTimeout(() => setStatus(''), 3000); 
+
+    setTimeout(() => setStatus(''), 3000);
   };
-  
 
   // const handleSubmit = async () => {
-  //   const scriptURL = 'https://script.google.com/macros/library/d/1YuXY0rVTunfbptsjXeh_9n4DejcDpK7Mcsy5yZVJa3Uf6vA6zG6e4VrT/1';
-  
+  //   const scriptURL =
+  //     'https://script.google.com/macros/s/AKfycbwlxeQ13C14n8p3SRV8rDRJ9WkzpeH45JpS0xCSua9-w0j6VvYn7G9avyrez924RNwE/exec';
+
   //   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
   //     setStatus('⚠️Please enter a valid email address.');
   //     return;
   //   }
-  
+
   //   if (!subject || subject.trim().length === 0) {
   //     setStatus('⚠️Please enter a subject.');
   //     return;
   //   }
-  
+
   //   if (!msg || msg.trim().length === 0) {
   //     setStatus('⚠️Please enter a message.');
   //     return;
   //   }
-  
+
   //   try {
   //     const response = await fetch(scriptURL, {
   //       method: 'POST',
@@ -49,7 +49,7 @@ export const Contact = () => {
   //         message: msg,
   //       }),
   //     });
-  
+
   //     if (response.ok) {
   //       setStatus('✅Message sent successfully!');
   //       setMsg('');
@@ -64,7 +64,6 @@ export const Contact = () => {
   //     console.error('Error:', error);
   //   }
   // };
-    
 
   const contacts = [
     {
