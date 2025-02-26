@@ -1,5 +1,6 @@
 import {Footer} from 'components/Footer/index';
 import {Header} from 'components/Header/index';
+import LoadingSpinner from 'components/Loader/LoadingSpinner';
 import {TabBar} from 'components/TabBar/TabBar';
 import {ThemeProvider} from 'providers/theme/ThemeProvider';
 import {Suspense, lazy} from 'react';
@@ -27,7 +28,7 @@ export const Layout = () => {
             <TabBar mobileAndTablet={mobileAndTablet} />
 
             <main className="page-wrapper px-4 pt-4 sm:px-8">
-              <Suspense fallback={<div></div>}>
+              <Suspense fallback={<LoadingSpinner />}>
                 <Outlet />
               </Suspense>
             </main>
