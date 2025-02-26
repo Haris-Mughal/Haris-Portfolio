@@ -1,21 +1,12 @@
 import {useState} from 'react';
 import ProjectCard from './ProjectCard';
-import {comerciaProjects, customProjects} from './utils';
+import {staticProjects, personalProjects, teamProjects} from './utils';
 
 import {DownloadCVButton} from 'components/DownloadCVButton';
 
 export const Projects = () => {
-  const data = [
-    {
-      label: 'Personal',
-      value: 'personal',
-    },
-    {
-      label: 'Comercial',
-      value: 'comercial',
-    },
-  ];
-  const [activeTab, setActiveTab] = useState(data[0].value);
+  const [activeTab, setActiveTab] = useState('fullstack');
+  const [fullstackCategory, setFullstackCategory] = useState('personal');
 
   return (
     <>
@@ -30,35 +21,63 @@ export const Projects = () => {
       </div>
       <div className="mb-8">
         <button
-          title="Personal projects"
-          onClick={() => setActiveTab('personal')}
-          className={activeTab === 'personal' ? `btn-active` : 'btn'}
+          title="Fullstack projects"
+          onClick={() => setActiveTab('fullstack')}
+          className={activeTab === 'fullstack' ? `btn-active` : 'btn'}
         >
-          Personal
+          Fullstack
         </button>
+        &nbsp;
         <button
-          title="Comercial projects"
-          onClick={() => setActiveTab('comercial')}
-          className={activeTab === 'comercial' ? `btn-active` : 'btn'}
+          title="Static projects"
+          onClick={() => setActiveTab('static')}
+          className={activeTab === 'static' ? `btn-active` : 'btn'}
         >
-          Comercial
+          Static
         </button>
       </div>
       <>
-        {activeTab === 'comercial' ? (
+        {/* {activeTab === 'fullstack' ? (
           <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {comerciaProjects.map((project, index) => (
+            {fullStackProjects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}
           </div>
         ) : (
           <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {customProjects.map((project, index) => (
+            {staticProjects.map((project, index) => (
               <ProjectCard key={index} project={project} />
             ))}
           </div>
+        )} */}
+        {activeTab === 'fullstack' && (
+          <div className="mb-6 flex gap-4 justify-center">
+            <button
+              title="Personal Projects"
+              onClick={() => setFullstackCategory('personal')}
+              className={fullstackCategory === 'personal' ? 'btn-active' : 'btn'}
+            >
+              Personal
+            </button>
+            <button
+              title="Team Projects"
+              onClick={() => setFullstackCategory('team')}
+              className={fullstackCategory === 'team' ? 'btn-active' : 'btn'}
+            >
+              Team
+            </button>
+          </div>
         )}
       </>
+
+      <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
+        {activeTab === 'static'
+          ? staticProjects.map((project, index) => <ProjectCard key={index} project={project} />)
+          : fullstackCategory === 'personal'
+            ? personalProjects.map((project, index) => <ProjectCard key={index} project={project} />)
+            : teamProjects.map((project, index) => <ProjectCard key={index} project={project} />)}
+      </div>
+
       <div className="mt-12 w-full">
         <i className="fond-light pr-4 text-lg text-primaryColor">More information</i>
         <DownloadCVButton isSmall />
