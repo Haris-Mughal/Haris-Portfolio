@@ -31,10 +31,10 @@ export const Technologies = () => {
                     <div className="h-12 w-12 sm:h-16 sm:w-16">{item.icon}</div>
                     <div className="pl-4 text-primaryColor">
                       <span className="h-7 text-base font-semibold xl:text-2xl xl:font-bold">{item.label}</span>
-                      {item?.expirience && (
+                      {item?.experience && (
                         <div className="flex flex-row pt-1 text-sm font-light sm:flex-col sm:pt-2 xl:text-base">
-                          <span className="mr-2 sm:mr-1">Expirience:</span>
-                          <span>{item?.expirience} years</span>
+                          <span className="mr-2 sm:mr-1">experience:</span>
+                          <span>{item?.experience} years</span>
                         </div>
                       )}
                     </div>
