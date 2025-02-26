@@ -23,7 +23,7 @@ export const PdfPreviewer = () => {
   });
 
   // console.log('import.meta.env.VITE_CV_PATH', import.meta.env.VITE_CV_PATH);
-  const [, handleDownload] = useDownloadPdf('/haris-developer-cv.pdf', 'Haris-Developer-CV.pdf');
+  const [, handleDownload] = useDownloadPdf('/harisDeveloperCV.pdf');
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
       <div className="h-full overflow-hidden p-2">
@@ -67,7 +67,7 @@ export const PdfPreviewer = () => {
             </ZoomIn>
           </div>
         </div>
-        <Viewer fileUrl={'/haris-developer-cv.pdf'} plugins={[zoomPluginInstance, fullScreenPluginInstance]} />
+        <Viewer fileUrl={'/harisDeveloperCV.pdf'} plugins={[zoomPluginInstance, fullScreenPluginInstance]} />
       </div>
     </Worker>
   );
