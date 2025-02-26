@@ -97,6 +97,8 @@
   --bgColor: #f0f0f0;
   --leftSideBorder: #d4d3d5;
 
+  --myNameColor: #878787;
+
   --textEditorColor: #424242;
   --textEditorHoverColor: #FFF;
   --textEditorHoverBg: #007cd2;
@@ -121,6 +123,8 @@
   --bgColor: #282A36;
   --leftSideBorder: #474649;
 
+  --myNameColor: #fff;
+
   --textEditorColor: #c4dbf2;
   --textEditorHoverColor: #373634;
   --textEditorHoverBg: #c20cc5;
@@ -143,6 +147,8 @@
   --primaryColor: #FFFFFF;
   --bgColor: #0C2235;
   --leftSideBorder: #143d4f;
+
+  --myNameColor: #fff;
 
   --textEditorColor: #c4dbf2;
   --textEditorHoverColor: #4a83a0;

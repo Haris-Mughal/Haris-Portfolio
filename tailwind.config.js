@@ -10,6 +10,8 @@ export default {
         bgColor: `var(--bgColor)`,
         primaryColor: `var(--primaryColor)`,
 
+        myNameColor: `var(--myNameColor)`,
+
         themePrimaryColor: `var(--themePrimaryColor)`,
         themeButtonPrimaryColor: `var(--themeButtonPrimaryColor)`,
         themeButtonSecondaryColor: `var(--themeButtonSecondaryColor)`,
@@ -45,7 +47,6 @@ export default {
       },
       backgroundImage: {
         about: "url('assets/images/about.png')",
-        cfProject: "url('assets/images/cf-logo.webp')",
       },
       boxShadow: {
         technologiesCard: `0px 0px 10px 1px theme(colors.themePrimaryColor)`,
