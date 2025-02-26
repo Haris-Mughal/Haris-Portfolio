@@ -23,19 +23,28 @@ export const Home = () => {
             <span className="span">{'<'}</span>Hi 👋 my name is
           </p>
 
-          <h1 className="pt-2 text-3xl font-bold text-white opacity-90 sm:text-5xl">
+          <h1 className="text-myNameColor pt-2 text-3xl font-bold opacity-90 sm:text-5xl">
             Muhammad Haris Ahsan{' '}
             <span className="text-3xl font-extrabold text-themePrimaryColor sm:text-5xl">{'/>'}</span>{' '}
           </h1>
           <TypeAnimation
-            sequence={['Full-Stack Developer', 1000, 'MERN-stack Developer', 1000, 'Next.js Developer', 1000]}
+            className="text-myNameColor"
+            sequence={[
+              'Full-Stack Developer',
+              1000,
+              'MERN-stack Developer',
+              1000,
+              'LeetCode Enthusiast',
+              1000,
+              '1x intl. Hack Winner',
+              1000,
+            ]}
             wrapper="span"
             speed={1}
             style={{
               paddingTop: '8px',
               fontWeight: '300',
               fontSize: '1.5rem',
-              color: '#fff',
               display: 'inline-block',
             }}
             repeat={Infinity}
