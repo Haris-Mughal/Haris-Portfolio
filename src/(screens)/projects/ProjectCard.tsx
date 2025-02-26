@@ -1,13 +1,3 @@
-// function ProjectCard() {
-//   return (
-//     <div>
-//       <></>
-//     </div>
-//   );
-// }
-
-// export default ProjectCard;
-
 import {useState} from 'react';
 import {FaGithub} from 'react-icons/fa';
 import {MdClose, MdOutlineOpenInNew} from 'react-icons/md';
@@ -63,7 +53,7 @@ const ProjectCard = ({project, isDialog = false, isOpenDialog, toggleShowMore}: 
             <FaGithub className="mr-2 text-[30px]" />
             <a
               title="View on git hub"
-              className="rounded-md bg-black px-4 py-1 text-primaryColor hover:cursor-pointer"
+              className="rounded-md bg-black px-4 py-1 text-white hover:cursor-pointer"
               href={project.git}
               target="_blank"
               rel="noreferrer"
