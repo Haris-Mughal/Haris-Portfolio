@@ -14,7 +14,7 @@ export const socialNetworks = (size: number = 45, isFooter = false) => [
     title="LinkedIn"
     key="linkedin"
     className="target-blank"
-    onClick={handleOpenSocialNetwork('https://www.linkedin.com/in/muhammad-haris-ahsan-825113249/')}
+    onClick={handleOpenSocialNetwork('https://www.linkedin.com/in/iamharisahsan/')}
   >
     <FaLinkedin
       size={size}
@@ -40,7 +40,7 @@ export const socialNetworks = (size: number = 45, isFooter = false) => [
     title="Leet Code"
     key="leetCode"
     className="target-blank"
-    onClick={handleOpenSocialNetwork('https://leetcode.com/u/Muhammad_Haris_Ahsan/')}
+    onClick={handleOpenSocialNetwork('https://leetcode.com/u/iamharisahsan/')}
   >
     <SiLeetcode
       size={size}
@@ -61,7 +61,7 @@ export const socialNetworks = (size: number = 45, isFooter = false) => [
   <button
     title="Instagram"
     key="instagram"
-    onClick={handleOpenSocialNetwork('https://www.instagram.com/you_call_me_harii_/')}
+    onClick={handleOpenSocialNetwork('https://www.instagram.com/_iam_haris.ahsan_/')}
   >
     <FaInstagram
       size={size}
@@ -73,7 +73,7 @@ export const socialNetworks = (size: number = 45, isFooter = false) => [
   <button
     title="Facebook"
     key="facebook"
-    onClick={handleOpenSocialNetwork('https://www.facebook.com/profile.php?id=100061029926998')}
+    onClick={handleOpenSocialNetwork('https://www.facebook.com/iamharisahsan')}
   >
     <FaFacebook
       size={size}
