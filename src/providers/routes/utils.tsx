@@ -39,7 +39,7 @@ export const routesLinkItems = (pdfPreviewerOpen: boolean): RoutesLinkItems[] =>
     },
     {
       logo: <FaHtml5 color="#DE4B25" />,
-      title: 'aboute.html',
+      title: 'about.html',
       path: '/about',
     },
     {
