@@ -30,13 +30,15 @@ export const Home = () => {
           <TypeAnimation
             className="text-myNameColor"
             sequence={[
-              'Full-Stack Developer',
+              'Full-Stack (MERN) Developer',
               1000,
-              'MERN-stack Developer',
+              'Software/AI Engineer',
               1000,
-              'LeetCode Enthusiast',
+              'Trainer & Mentor & Judge',
               1000,
-              '1x intl. Hack Winner',
+              'Section Leader @Stanford CIP',
+              1000,
+              '3x intl. Hackathon Winner',
               1000,
             ]}
             wrapper="span"
